@@ -25,7 +25,6 @@ class ViewDataSource: ViewDataSourceProtocol{
             .validate(statusCode: 200..<300)
             .responseData { response in
         
-                if response.data != nil {
                     switch response.result {
                     case .success(let value):
                         do{
@@ -40,7 +39,6 @@ class ViewDataSource: ViewDataSourceProtocol{
                         completionHandler(false, nil)
                         break
                     }
-                }
             }
 
         }

@@ -6,3 +6,23 @@
 //
 
 import Foundation
+
+
+class PokemonDetailInfoPresenter: NSObject, PokemonDetailInfoPresenterProtocol{
+    var view: PokemonDetailInfoViewProtocol?
+
+    private let interactor: PokemonDetailInfoInteractorProtocol
+    
+    init(interactor:PokemonDetailInfoInteractorProtocol){
+        self.interactor = interactor
+    }
+    
+    func viewIsReady(){
+        self.interactor.fetchView(){ dto in
+            self.view?.setupInfoPokemon(dto)
+        }failure:{ (error) in
+            print(error)
+        }
+    }
+}
+

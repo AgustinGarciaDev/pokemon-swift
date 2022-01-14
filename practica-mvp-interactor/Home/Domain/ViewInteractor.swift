@@ -20,9 +20,7 @@ class ViewInteractor : ViewInteractorProtocol {
     func fetchView(success: @escaping (ViewPokemonDTO) -> Void, failure: @escaping (FailedApi) -> Void){
         
         repository.fetchView{(dto) in
-            print("Recibo la data \(dto.count)")
             success(dto)
-            
         }failure: { (error) in
             failure(.errorCallApi)
         }

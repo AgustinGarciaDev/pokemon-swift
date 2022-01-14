@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+enum FailedApi : Error {
+    case errorCallApi
+}

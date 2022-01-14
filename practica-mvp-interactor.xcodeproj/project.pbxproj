@@ -7,16 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220E924527872FE7005719B0 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220E924427872FE7005719B0 /* CustomCell.swift */; };
 		2251802A2784996D00DE88CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225180292784996D00DE88CE /* AppDelegate.swift */; };
 		2251802C2784996D00DE88CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2251802B2784996D00DE88CE /* SceneDelegate.swift */; };
 		2251802E2784996D00DE88CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2251802D2784996D00DE88CE /* ViewController.swift */; };
-		225180312784996D00DE88CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2251802F2784996D00DE88CE /* Main.storyboard */; };
 		225180342784996D00DE88CE /* practica_mvp_interactor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 225180322784996D00DE88CE /* practica_mvp_interactor.xcdatamodeld */; };
 		225180362784996F00DE88CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225180352784996F00DE88CE /* Assets.xcassets */; };
-		225180392784996F00DE88CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225180372784996F00DE88CE /* LaunchScreen.storyboard */; };
 		225180442784996F00DE88CE /* practica_mvp_interactorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225180432784996F00DE88CE /* practica_mvp_interactorTests.swift */; };
 		2251804E2784996F00DE88CE /* practica_mvp_interactorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2251804D2784996F00DE88CE /* practica_mvp_interactorUITests.swift */; };
 		225180502784996F00DE88CE /* practica_mvp_interactorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2251804F2784996F00DE88CE /* practica_mvp_interactorUITestsLaunchTests.swift */; };
+		225180602784A47800DE88CE /* ViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2251805F2784A47800DE88CE /* ViewPresenter.swift */; };
+		225180632784A50400DE88CE /* ViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225180622784A50400DE88CE /* ViewProtocols.swift */; };
+		225180662784AF3D00DE88CE /* ViewDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225180652784AF3D00DE88CE /* ViewDTO.swift */; };
+		225180682784B6D700DE88CE /* ViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225180672784B6D700DE88CE /* ViewDataSource.swift */; };
+		2251806A2784B83E00DE88CE /* ViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225180692784B83E00DE88CE /* ViewViewModel.swift */; };
+		2251806D2784C4C700DE88CE /* ViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2251806C2784C4C700DE88CE /* ViewInteractor.swift */; };
+		2251806F2784CA7300DE88CE /* ViewRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2251806E2784CA7300DE88CE /* ViewRepository.swift */; };
+		225180722784CC8100DE88CE /* ErrorApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225180712784CC8100DE88CE /* ErrorApi.swift */; };
+		22625D232790782F00363C69 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22625D222790782F00363C69 /* Launch Screen.storyboard */; };
+		22625D2527908B1F00363C69 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22625D2427908B1F00363C69 /* UIImageView+Extension.swift */; };
+		22625D272790C13100363C69 /* PokemonStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22625D262790C13100363C69 /* PokemonStatView.swift */; };
+		22951099278F2529009B9552 /* PokemonDetailInfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22951098278F2529009B9552 /* PokemonDetailInfoPresenter.swift */; };
+		2295109C278F25C4009B9552 /* PokemonDetailInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2295109B278F25C4009B9552 /* PokemonDetailInfoInteractor.swift */; };
+		2295109E278F268E009B9552 /* PokemonDetailInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2295109D278F268E009B9552 /* PokemonDetailInfoRepository.swift */; };
+		229510A1278F298D009B9552 /* PokemonDetailInfoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229510A0278F298D009B9552 /* PokemonDetailInfoDTO.swift */; };
+		229510A3278F2AC1009B9552 /* PokemonDetailInfoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229510A2278F2AC1009B9552 /* PokemonDetailInfoDataSource.swift */; };
+		229510A6278F2B5B009B9552 /* PokemonDetailInfoProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229510A5278F2B5B009B9552 /* PokemonDetailInfoProtocols.swift */; };
+		229F0FC0278CCF2500BB1FA0 /* PokemonDetailInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229F0FBF278CCF2500BB1FA0 /* PokemonDetailInfoViewController.swift */; };
+		29FDAF8703BFF36DBC68728B /* Pods_practica_mvp_interactorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55B57BD54E4B9EB46DDE654 /* Pods_practica_mvp_interactorTests.framework */; };
+		508883EB9BE23159FADA8B1C /* Pods_practica_mvp_interactor_practica_mvp_interactorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6CE4B1FB9BA3D809CAAEB61 /* Pods_practica_mvp_interactor_practica_mvp_interactorUITests.framework */; };
+		E87E2E2EEB7B408CA02468FA /* Pods_practica_mvp_interactor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A79581468C93E2EC29A5A3B /* Pods_practica_mvp_interactor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,20 +57,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		220E924427872FE7005719B0 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		225180262784996D00DE88CE /* practica-mvp-interactor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "practica-mvp-interactor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		225180292784996D00DE88CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2251802B2784996D00DE88CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2251802D2784996D00DE88CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		225180302784996D00DE88CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		225180332784996D00DE88CE /* practica_mvp_interactor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = practica_mvp_interactor.xcdatamodel; sourceTree = "<group>"; };
 		225180352784996F00DE88CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		225180382784996F00DE88CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2251803A2784996F00DE88CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2251803F2784996F00DE88CE /* practica-mvp-interactorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "practica-mvp-interactorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		225180432784996F00DE88CE /* practica_mvp_interactorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practica_mvp_interactorTests.swift; sourceTree = "<group>"; };
 		225180492784996F00DE88CE /* practica-mvp-interactorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "practica-mvp-interactorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2251804D2784996F00DE88CE /* practica_mvp_interactorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practica_mvp_interactorUITests.swift; sourceTree = "<group>"; };
 		2251804F2784996F00DE88CE /* practica_mvp_interactorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practica_mvp_interactorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2251805F2784A47800DE88CE /* ViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresenter.swift; sourceTree = "<group>"; };
+		225180622784A50400DE88CE /* ViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocols.swift; sourceTree = "<group>"; };
+		225180652784AF3D00DE88CE /* ViewDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDTO.swift; sourceTree = "<group>"; };
+		225180672784B6D700DE88CE /* ViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDataSource.swift; sourceTree = "<group>"; };
+		225180692784B83E00DE88CE /* ViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewViewModel.swift; sourceTree = "<group>"; };
+		2251806C2784C4C700DE88CE /* ViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInteractor.swift; sourceTree = "<group>"; };
+		2251806E2784CA7300DE88CE /* ViewRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRepository.swift; sourceTree = "<group>"; };
+		225180712784CC8100DE88CE /* ErrorApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorApi.swift; sourceTree = "<group>"; };
+		22625D222790782F00363C69 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		22625D2427908B1F00363C69 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		22625D262790C13100363C69 /* PokemonStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonStatView.swift; sourceTree = "<group>"; };
+		22951098278F2529009B9552 /* PokemonDetailInfoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailInfoPresenter.swift; sourceTree = "<group>"; };
+		2295109B278F25C4009B9552 /* PokemonDetailInfoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailInfoInteractor.swift; sourceTree = "<group>"; };
+		2295109D278F268E009B9552 /* PokemonDetailInfoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailInfoRepository.swift; sourceTree = "<group>"; };
+		229510A0278F298D009B9552 /* PokemonDetailInfoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailInfoDTO.swift; sourceTree = "<group>"; };
+		229510A2278F2AC1009B9552 /* PokemonDetailInfoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailInfoDataSource.swift; sourceTree = "<group>"; };
+		229510A5278F2B5B009B9552 /* PokemonDetailInfoProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailInfoProtocols.swift; sourceTree = "<group>"; };
+		229F0FBF278CCF2500BB1FA0 /* PokemonDetailInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailInfoViewController.swift; sourceTree = "<group>"; };
+		235319DE70C74F28AABE71CB /* Pods-practica-mvp-interactor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-practica-mvp-interactor.release.xcconfig"; path = "Target Support Files/Pods-practica-mvp-interactor/Pods-practica-mvp-interactor.release.xcconfig"; sourceTree = "<group>"; };
+		2A79581468C93E2EC29A5A3B /* Pods_practica_mvp_interactor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_practica_mvp_interactor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37C7586AA6F28A16B18C3EC2 /* Pods-practica-mvp-interactorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-practica-mvp-interactorTests.release.xcconfig"; path = "Target Support Files/Pods-practica-mvp-interactorTests/Pods-practica-mvp-interactorTests.release.xcconfig"; sourceTree = "<group>"; };
+		3FCCC2BF4E2C90B2389DE61B /* Pods-practica-mvp-interactor-practica-mvp-interactorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-practica-mvp-interactor-practica-mvp-interactorUITests.release.xcconfig"; path = "Target Support Files/Pods-practica-mvp-interactor-practica-mvp-interactorUITests/Pods-practica-mvp-interactor-practica-mvp-interactorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		759F959264960CB3A8FBE96B /* Pods-practica-mvp-interactor-practica-mvp-interactorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-practica-mvp-interactor-practica-mvp-interactorUITests.debug.xcconfig"; path = "Target Support Files/Pods-practica-mvp-interactor-practica-mvp-interactorUITests/Pods-practica-mvp-interactor-practica-mvp-interactorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D2672D91AEDBA71318CF8D5 /* Pods-practica-mvp-interactorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-practica-mvp-interactorTests.debug.xcconfig"; path = "Target Support Files/Pods-practica-mvp-interactorTests/Pods-practica-mvp-interactorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B55B57BD54E4B9EB46DDE654 /* Pods_practica_mvp_interactorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_practica_mvp_interactorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B968D806561C68C8B071FB4C /* Pods-practica-mvp-interactor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-practica-mvp-interactor.debug.xcconfig"; path = "Target Support Files/Pods-practica-mvp-interactor/Pods-practica-mvp-interactor.debug.xcconfig"; sourceTree = "<group>"; };
+		E6CE4B1FB9BA3D809CAAEB61 /* Pods_practica_mvp_interactor_practica_mvp_interactorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_practica_mvp_interactor_practica_mvp_interactorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E87E2E2EEB7B408CA02468FA /* Pods_practica_mvp_interactor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29FDAF8703BFF36DBC68728B /* Pods_practica_mvp_interactorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				508883EB9BE23159FADA8B1C /* Pods_practica_mvp_interactor_practica_mvp_interactorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +134,8 @@
 				225180422784996F00DE88CE /* practica-mvp-interactorTests */,
 				2251804C2784996F00DE88CE /* practica-mvp-interactorUITests */,
 				225180272784996D00DE88CE /* Products */,
+				AFFD7868CBC6595067D9E5E1 /* Pods */,
+				8DE3260C79F49800C4A81764 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +152,13 @@
 		225180282784996D00DE88CE /* practica-mvp-interactor */ = {
 			isa = PBXGroup;
 			children = (
-				225180292784996D00DE88CE /* AppDelegate.swift */,
-				2251802B2784996D00DE88CE /* SceneDelegate.swift */,
-				2251802D2784996D00DE88CE /* ViewController.swift */,
-				2251802F2784996D00DE88CE /* Main.storyboard */,
+				2251805C2784A40400DE88CE /* Common */,
 				225180352784996F00DE88CE /* Assets.xcassets */,
-				225180372784996F00DE88CE /* LaunchScreen.storyboard */,
+				229F0FBA278C946A00BB1FA0 /* Pokemon */,
+				229F0FB9278C5DD700BB1FA0 /* Home */,
 				2251803A2784996F00DE88CE /* Info.plist */,
 				225180322784996D00DE88CE /* practica_mvp_interactor.xcdatamodeld */,
+				22625D222790782F00363C69 /* Launch Screen.storyboard */,
 			);
 			path = "practica-mvp-interactor";
 			sourceTree = "<group>";
@@ -130,6 +180,159 @@
 			path = "practica-mvp-interactorUITests";
 			sourceTree = "<group>";
 		};
+		2251805C2784A40400DE88CE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				225180702784CC7000DE88CE /* Error */,
+				225180292784996D00DE88CE /* AppDelegate.swift */,
+				2251802B2784996D00DE88CE /* SceneDelegate.swift */,
+				22625D2427908B1F00363C69 /* UIImageView+Extension.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2251805D2784A41700DE88CE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2251802D2784996D00DE88CE /* ViewController.swift */,
+				220E924427872FE7005719B0 /* CustomCell.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2251805E2784A44C00DE88CE /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2251805F2784A47800DE88CE /* ViewPresenter.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		225180612784A4F000DE88CE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				225180622784A50400DE88CE /* ViewProtocols.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		225180642784AF2500DE88CE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				225180652784AF3D00DE88CE /* ViewDTO.swift */,
+				225180672784B6D700DE88CE /* ViewDataSource.swift */,
+				225180692784B83E00DE88CE /* ViewViewModel.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2251806B2784BE1E00DE88CE /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				2251806C2784C4C700DE88CE /* ViewInteractor.swift */,
+				2251806E2784CA7300DE88CE /* ViewRepository.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		225180702784CC7000DE88CE /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				225180712784CC8100DE88CE /* ErrorApi.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		22951096278F24AA009B9552 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				229F0FBF278CCF2500BB1FA0 /* PokemonDetailInfoViewController.swift */,
+				22625D262790C13100363C69 /* PokemonStatView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		22951097278F2504009B9552 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				22951098278F2529009B9552 /* PokemonDetailInfoPresenter.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		2295109A278F2554009B9552 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				2295109B278F25C4009B9552 /* PokemonDetailInfoInteractor.swift */,
+				2295109D278F268E009B9552 /* PokemonDetailInfoRepository.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		2295109F278F2968009B9552 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				229510A0278F298D009B9552 /* PokemonDetailInfoDTO.swift */,
+				229510A2278F2AC1009B9552 /* PokemonDetailInfoDataSource.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		229510A4278F2B40009B9552 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				229510A5278F2B5B009B9552 /* PokemonDetailInfoProtocols.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		229F0FB9278C5DD700BB1FA0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2251805D2784A41700DE88CE /* UI */,
+				2251805E2784A44C00DE88CE /* Presentation */,
+				2251806B2784BE1E00DE88CE /* Domain */,
+				225180642784AF2500DE88CE /* Data */,
+				225180612784A4F000DE88CE /* Core */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		229F0FBA278C946A00BB1FA0 /* Pokemon */ = {
+			isa = PBXGroup;
+			children = (
+				229510A4278F2B40009B9552 /* Core */,
+				2295109F278F2968009B9552 /* Data */,
+				2295109A278F2554009B9552 /* Domain */,
+				22951097278F2504009B9552 /* Presentation */,
+				22951096278F24AA009B9552 /* UI */,
+			);
+			path = Pokemon;
+			sourceTree = "<group>";
+		};
+		8DE3260C79F49800C4A81764 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A79581468C93E2EC29A5A3B /* Pods_practica_mvp_interactor.framework */,
+				E6CE4B1FB9BA3D809CAAEB61 /* Pods_practica_mvp_interactor_practica_mvp_interactorUITests.framework */,
+				B55B57BD54E4B9EB46DDE654 /* Pods_practica_mvp_interactorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFFD7868CBC6595067D9E5E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B968D806561C68C8B071FB4C /* Pods-practica-mvp-interactor.debug.xcconfig */,
+				235319DE70C74F28AABE71CB /* Pods-practica-mvp-interactor.release.xcconfig */,
+				759F959264960CB3A8FBE96B /* Pods-practica-mvp-interactor-practica-mvp-interactorUITests.debug.xcconfig */,
+				3FCCC2BF4E2C90B2389DE61B /* Pods-practica-mvp-interactor-practica-mvp-interactorUITests.release.xcconfig */,
+				9D2672D91AEDBA71318CF8D5 /* Pods-practica-mvp-interactorTests.debug.xcconfig */,
+				37C7586AA6F28A16B18C3EC2 /* Pods-practica-mvp-interactorTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +340,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 225180532784996F00DE88CE /* Build configuration list for PBXNativeTarget "practica-mvp-interactor" */;
 			buildPhases = (
+				25C52039A35D6CCFD846A202 /* [CP] Check Pods Manifest.lock */,
 				225180222784996D00DE88CE /* Sources */,
 				225180232784996D00DE88CE /* Frameworks */,
 				225180242784996D00DE88CE /* Resources */,
+				57A731F9DE877FA6AAA63A56 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +359,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 225180562784996F00DE88CE /* Build configuration list for PBXNativeTarget "practica-mvp-interactorTests" */;
 			buildPhases = (
+				02618E13C8495DEF238340F1 /* [CP] Check Pods Manifest.lock */,
 				2251803B2784996F00DE88CE /* Sources */,
 				2251803C2784996F00DE88CE /* Frameworks */,
 				2251803D2784996F00DE88CE /* Resources */,
@@ -172,9 +378,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 225180592784996F00DE88CE /* Build configuration list for PBXNativeTarget "practica-mvp-interactorUITests" */;
 			buildPhases = (
+				2F7C10B419A1E69FD9DB152F /* [CP] Check Pods Manifest.lock */,
 				225180452784996F00DE88CE /* Sources */,
 				225180462784996F00DE88CE /* Frameworks */,
 				225180472784996F00DE88CE /* Resources */,
+				DFADEEE605F70E000AB5995B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,6 +401,10 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					ImageHome,
+					Logo,
+				);
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
@@ -234,9 +446,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				225180392784996F00DE88CE /* LaunchScreen.storyboard in Resources */,
+				22625D232790782F00363C69 /* Launch Screen.storyboard in Resources */,
 				225180362784996F00DE88CE /* Assets.xcassets in Resources */,
-				225180312784996D00DE88CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,15 +467,136 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02618E13C8495DEF238340F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-practica-mvp-interactorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25C52039A35D6CCFD846A202 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-practica-mvp-interactor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F7C10B419A1E69FD9DB152F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-practica-mvp-interactor-practica-mvp-interactorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57A731F9DE877FA6AAA63A56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-practica-mvp-interactor/Pods-practica-mvp-interactor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-practica-mvp-interactor/Pods-practica-mvp-interactor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-practica-mvp-interactor/Pods-practica-mvp-interactor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFADEEE605F70E000AB5995B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-practica-mvp-interactor-practica-mvp-interactorUITests/Pods-practica-mvp-interactor-practica-mvp-interactorUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-practica-mvp-interactor-practica-mvp-interactorUITests/Pods-practica-mvp-interactor-practica-mvp-interactorUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-practica-mvp-interactor-practica-mvp-interactorUITests/Pods-practica-mvp-interactor-practica-mvp-interactorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		225180222784996D00DE88CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2251802E2784996D00DE88CE /* ViewController.swift in Sources */,
+				220E924527872FE7005719B0 /* CustomCell.swift in Sources */,
+				225180722784CC8100DE88CE /* ErrorApi.swift in Sources */,
+				2295109E278F268E009B9552 /* PokemonDetailInfoRepository.swift in Sources */,
+				229510A1278F298D009B9552 /* PokemonDetailInfoDTO.swift in Sources */,
 				2251802A2784996D00DE88CE /* AppDelegate.swift in Sources */,
+				22625D272790C13100363C69 /* PokemonStatView.swift in Sources */,
 				2251802C2784996D00DE88CE /* SceneDelegate.swift in Sources */,
+				229510A3278F2AC1009B9552 /* PokemonDetailInfoDataSource.swift in Sources */,
 				225180342784996D00DE88CE /* practica_mvp_interactor.xcdatamodeld in Sources */,
+				22625D2527908B1F00363C69 /* UIImageView+Extension.swift in Sources */,
+				2251806A2784B83E00DE88CE /* ViewViewModel.swift in Sources */,
+				2251806D2784C4C700DE88CE /* ViewInteractor.swift in Sources */,
+				2251806F2784CA7300DE88CE /* ViewRepository.swift in Sources */,
+				229510A6278F2B5B009B9552 /* PokemonDetailInfoProtocols.swift in Sources */,
+				229F0FC0278CCF2500BB1FA0 /* PokemonDetailInfoViewController.swift in Sources */,
+				225180632784A50400DE88CE /* ViewProtocols.swift in Sources */,
+				225180682784B6D700DE88CE /* ViewDataSource.swift in Sources */,
+				22951099278F2529009B9552 /* PokemonDetailInfoPresenter.swift in Sources */,
+				2295109C278F25C4009B9552 /* PokemonDetailInfoInteractor.swift in Sources */,
+				225180602784A47800DE88CE /* ViewPresenter.swift in Sources */,
+				225180662784AF3D00DE88CE /* ViewDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,25 +631,6 @@
 			targetProxy = 2251804A2784996F00DE88CE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		2251802F2784996D00DE88CE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				225180302784996D00DE88CE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		225180372784996F00DE88CE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				225180382784996F00DE88CE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		225180512784996F00DE88CE /* Debug */ = {
@@ -438,9 +751,11 @@
 		};
 		225180542784996F00DE88CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B968D806561C68C8B071FB4C /* Pods-practica-mvp-interactor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6PTSGN23VN;
@@ -448,7 +763,7 @@
 				INFOPLIST_FILE = "practica-mvp-interactor/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -456,6 +771,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				ON_DEMAND_RESOURCES_PREFETCH_ORDER = "ImageHome Logo";
 				PRODUCT_BUNDLE_IDENTIFIER = "practica.practica-mvp-interactor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -466,9 +782,11 @@
 		};
 		225180552784996F00DE88CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 235319DE70C74F28AABE71CB /* Pods-practica-mvp-interactor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6PTSGN23VN;
@@ -476,7 +794,7 @@
 				INFOPLIST_FILE = "practica-mvp-interactor/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -484,6 +802,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				ON_DEMAND_RESOURCES_PREFETCH_ORDER = "ImageHome Logo";
 				PRODUCT_BUNDLE_IDENTIFIER = "practica.practica-mvp-interactor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -494,6 +813,7 @@
 		};
 		225180572784996F00DE88CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D2672D91AEDBA71318CF8D5 /* Pods-practica-mvp-interactorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +839,7 @@
 		};
 		225180582784996F00DE88CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37C7586AA6F28A16B18C3EC2 /* Pods-practica-mvp-interactorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -544,6 +865,7 @@
 		};
 		2251805A2784996F00DE88CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 759F959264960CB3A8FBE96B /* Pods-practica-mvp-interactor-practica-mvp-interactorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -567,6 +889,7 @@
 		};
 		2251805B2784996F00DE88CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FCCC2BF4E2C90B2389DE61B /* Pods-practica-mvp-interactor-practica-mvp-interactorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

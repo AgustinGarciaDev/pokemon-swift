@@ -8,6 +8,9 @@
 import Foundation
 import Alamofire
 
+protocol btnCellProtocol {
+    func buttonTouchedOnCell(celda :CustomCell)
+}
 
 protocol ViewPresenterProtocol{
     var view: ViewViewProtocol? {get set}
@@ -16,7 +19,9 @@ protocol ViewPresenterProtocol{
 
 protocol ViewViewProtocol {
     func presentErrorScreen()
+    func changeView(_ celda: CustomCell)
     func reloadTable()
+    func listPokemon(_ jsonData: ViewPokemonDTO)
 }
 
 protocol ViewDataSourceProtocol {

@@ -18,9 +18,13 @@ class ViewRepository : ViewRepositoryProtocol {
     }
     
     func fetchView(success: @escaping (ViewPokemonDTO) -> Void, failure: @escaping (FailedApi) -> Void) {
-        dataSource.GoToInfo(responseType: ViewPokemonDTO.self, method: .get){ status , data in
-
-            guard let dto = data else {return}
+        dataSource.GoToInfo(responseType: ViewPokemonDTO.self, method: .get) { status , data in
+            
+            guard let dto = data  else {
+                failure(FailedApi.errorCallApi)
+                return
+                
+            }
             success(dto)
             
         }
