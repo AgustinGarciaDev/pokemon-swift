@@ -9,23 +9,7 @@ import UIKit
 
 class PokemonDetailInfoViewController: UIViewController{
 
-    var pokemonInfoUrl:ViewPokemonInfoDTO?
-    var presenter:PokemonDetailInfoPresenter?
     var pokemon : PokemonDetailInfoDTO?
-    // MARK: - ViewProtocol
-
-    lazy var interactor:PokemonDetailInfoInteractorProtocol = {
-        PokemonDetailInfoInteractor(repository: repository)
-    }()
-    
-    
-    lazy var dataSource:PokemonDetailInfoDataSource = {
-        PokemonDetailInfoDataSource()
-    }()
-    
-    lazy var repository : PokemonDetailInfoRepositoryProtocol = {
-        PokemonDetailInfoRepository(dataSource: dataSource, urlPokemon: pokemonInfoUrl?.url)
-    }()
     
     //MARK: - UI Properties
     private lazy var namePokemon : UILabel = {
@@ -34,8 +18,8 @@ class PokemonDetailInfoViewController: UIViewController{
         label.text = ""
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
-        label.textColor = .black
-        label.font = UIFont.systemFont(ofSize: 33)
+        label.textColor = .white
+        label.font = UIFont.systemFont(ofSize: 50)
         return label
     }()
     
@@ -48,19 +32,23 @@ class PokemonDetailInfoViewController: UIViewController{
     private lazy var cardAttack : PokemonStatView = {
         let view = PokemonStatView(pokemonStats: pokemon!.stats )
         view.translatesAutoresizingMaskIntoConstraints = false
-       // view.backgroundColor = .black
        return view
     }()
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        guard let pokemonName = pokemon?.name else {return}
+        guard let pokemonImage = pokemon?.sprites?.other.home?.frontDefault?.absoluteString  else {return}
+        namePokemon.text = pokemonName.uppercased()
+        setImage(url: pokemonImage)
+    }
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
-        self.presenter = PokemonDetailInfoPresenter(interactor: interactor)
-        self.presenter?.view = self
-        self.presenter?.viewIsReady()
+        self.view.backgroundColor = .black
+        setUpComponent()
+
     }
     
     private func setupConstraints(){
@@ -94,15 +82,8 @@ class PokemonDetailInfoViewController: UIViewController{
 }
 
 
-extension PokemonDetailInfoViewController:PokemonDetailInfoViewProtocol {
-    func setupInfoPokemon(_ pokemon: PokemonDetailInfoDTO) {
-        self.pokemon = pokemon
-        
-        setUpComponent()
-       
-        namePokemon.text = pokemon.name
-        setImage(url: pokemon.sprites?.other.home?.frontDefault?.absoluteString ?? "")
-    }
+extension PokemonDetailInfoViewController{
+ 
     func setUpComponent(){
         self.setupConstraints()
     }
@@ -115,7 +96,6 @@ extension PokemonDetailInfoViewController:PokemonDetailInfoViewProtocol {
             let image = UIImage(data: imageData)
             DispatchQueue.main.async {
                 self.imgPokemon.image = image
-                print(self.imgPokemon)
             }
         }
     }

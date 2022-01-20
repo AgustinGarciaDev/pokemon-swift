@@ -8,7 +8,7 @@
 import Foundation
 
 
-class PokemonDetailInfoPresenter: NSObject, PokemonDetailInfoPresenterProtocol{
+class PokemonDetailInfoPresenter:  PokemonDetailInfoPresenterProtocol{
     var view: PokemonDetailInfoViewProtocol?
 
     private let interactor: PokemonDetailInfoInteractorProtocol

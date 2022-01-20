@@ -156,6 +156,7 @@
 				225180352784996F00DE88CE /* Assets.xcassets */,
 				229F0FBA278C946A00BB1FA0 /* Pokemon */,
 				229F0FB9278C5DD700BB1FA0 /* Home */,
+				229050BC2798ECC900DD60AA /* CustomCellPokemon */,
 				2251803A2784996F00DE88CE /* Info.plist */,
 				225180322784996D00DE88CE /* practica_mvp_interactor.xcdatamodeld */,
 				22625D222790782F00363C69 /* Launch Screen.storyboard */,
@@ -195,7 +196,6 @@
 			isa = PBXGroup;
 			children = (
 				2251802D2784996D00DE88CE /* ViewController.swift */,
-				220E924427872FE7005719B0 /* CustomCell.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -241,6 +241,22 @@
 				225180712784CC8100DE88CE /* ErrorApi.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		229050BC2798ECC900DD60AA /* CustomCellPokemon */ = {
+			isa = PBXGroup;
+			children = (
+				229050BD2798ECE600DD60AA /* UI */,
+			);
+			path = CustomCellPokemon;
+			sourceTree = "<group>";
+		};
+		229050BD2798ECE600DD60AA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				220E924427872FE7005719B0 /* CustomCell.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		22951096278F24AA009B9552 /* UI */ = {

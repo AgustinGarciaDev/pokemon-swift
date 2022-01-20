@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController, btnCellProtocol{
 
    
@@ -27,19 +28,10 @@ class ViewController: UIViewController, btnCellProtocol{
     //MARK: - Properties
     
     var presenter : ViewPresenter?
-    var pokemon: ViewPokemonDTO?
+    var pokemon = [PokemonDetailInfoDTO?]()
     
     //MARK: - UI Properties
-    private lazy var textLabel : UILabel = {
-        let label = UILabel()
-        label.numberOfLines = 0
-        label.text = "App pokemon"
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textAlignment = .center
-        label.textColor = .white
-        label.font = UIFont.systemFont(ofSize: 33)
-        return label
-    }()
+  
     
     private lazy var tablePokemon : UITableView = {
         let table = UITableView()
@@ -70,12 +62,13 @@ class ViewController: UIViewController, btnCellProtocol{
         self.addComponents()
         self.setupConstraints()
         presenter?.viewIsReady()
+        
+       
     }
     
     // MARK: -Helper functions
     
     func addComponents() {
-        self.view.addSubview(textLabel)
         self.view.addSubview(textError)
         self.view.addSubview(tablePokemon)
         self.tablePokemon.register(CustomCell.self, forCellReuseIdentifier: "Cell")
@@ -89,22 +82,16 @@ class ViewController: UIViewController, btnCellProtocol{
         
         let safeA = self.view.safeAreaLayoutGuide
         
-        NSLayoutConstraint.activate([
-            textLabel.topAnchor.constraint(equalTo: safeA.topAnchor , constant: 20 ),
-            textLabel.centerXAnchor.constraint(equalTo: safeA.centerXAnchor),
-            
-        ])
         
         NSLayoutConstraint.activate([
-            tablePokemon.topAnchor.constraint(equalTo: textLabel.bottomAnchor , constant: 50 ),
             tablePokemon.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             tablePokemon.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             tablePokemon.widthAnchor.constraint(equalToConstant: 350),
-            tablePokemon.heightAnchor.constraint(equalToConstant: 700)
+            tablePokemon.heightAnchor.constraint(equalToConstant: 900)
         ])
         
         NSLayoutConstraint.activate([
-            textError.topAnchor.constraint(equalTo: textLabel.bottomAnchor , constant: 20 ),
+
             textError.centerXAnchor.constraint(equalTo: safeA.centerXAnchor),
             textError.widthAnchor.constraint(equalToConstant: 250)
             
@@ -116,14 +103,16 @@ class ViewController: UIViewController, btnCellProtocol{
 
 
 extension ViewController: ViewViewProtocol, UITableViewDataSource, UITableViewDelegate {
-    func listPokemon(_ jsonData: ViewPokemonDTO) {
+    func listPokemon(_ jsonData: [PokemonDetailInfoDTO?]) {
         pokemon = jsonData
     }
+    
+  
     
     func changeView(_ celda: CustomCell) {
         
         let vc = PokemonDetailInfoViewController()
-        vc.pokemonInfoUrl = celda.pokemon
+        vc.pokemon = celda.pokemonInfo
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -135,7 +124,9 @@ extension ViewController: ViewViewProtocol, UITableViewDataSource, UITableViewDe
     }
     
     func reloadTable() {
-        self.tablePokemon.reloadData()
+        if(pokemon.count >= 918){
+            self.tablePokemon.reloadData()
+        }
     }
     
     func buttonTouchedOnCell(celda: CustomCell) {
@@ -144,25 +135,33 @@ extension ViewController: ViewViewProtocol, UITableViewDataSource, UITableViewDe
  
         
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-           // #warning Incomplete implementation, return the number of rows
-            
-        return  pokemon?.count ?? 0
+
+        return  pokemon.count
             
     }
        
       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
           
+          let pokemonInfoDetail =  pokemon[indexPath.row]
+    
           let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomCell
-          let pokemon =  pokemon?.results[indexPath.row]
-          
-          cell.titulo.text = pokemon?.name
+          cell.titulo.text =  pokemonInfoDetail?.name
+          cell.type.text = pokemonInfoDetail?.types[0]?.type?.name
           cell.btnDelegate = self
-          cell.pokemon = pokemon
+          cell.pokemonInfo = pokemonInfoDetail
+          guard let img = pokemonInfoDetail?.sprites?.frontDefault else {return cell}
+          cell.configureImage(with: img)
+        
+                  
           return cell
        
       }
        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-           return 70
+           return 100
        }
      
+ 
+    
+  
+    
 }

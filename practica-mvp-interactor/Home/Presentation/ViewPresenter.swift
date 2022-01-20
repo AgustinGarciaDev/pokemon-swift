@@ -23,8 +23,10 @@ class ViewPresenter: NSObject, ViewPresenterProtocol{
     func viewIsReady() {
         
         interactor.fetchView{ dto in
-            self.view?.listPokemon(dto)
-            DispatchQueue.main.async {
+
+        
+           DispatchQueue.main.async {
+                self.view?.listPokemon(dto)
                 self.view?.reloadTable()
             }
         }failure:{ (error) in
